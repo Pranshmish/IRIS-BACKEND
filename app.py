@@ -3,7 +3,8 @@ from flask_cors import CORS
 import joblib
 
 app = Flask(__name__)
-CORS(app, origins=["http://localhost:3000"])  # Allow requests only from React dev server
+CORS(app, origins=["http://localhost:3000", "https://iris-azure-ten.vercel.app"])
+  # Allow requests only from React dev server
 
 # Load the ML model
 try:
